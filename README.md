@@ -111,18 +111,18 @@ responsive layouts, accessibility, and practical API integration.
 
 ## 🛠️ Tech Stack
 
-  Technology        Purpose
-  ----------------- ----------------------------------------------
-  React             Front-end UI
-  Vite              Development and production build tooling
-  JavaScript        Application logic
-  CSS               Responsive visual design
-  React Router      Client-side routing
-  Lucide React      UI icons
-  OpenWeather API   Weather and location data
-  Pexels API        Dynamic destination and place images
-  Gemini API        AI travel assistant and itinerary generation
-  Vercel            Deployment
+  | Technology | Purpose |
+| --- | --- |
+| React | Front-end UI |
+| Vite | Development and production build tooling |
+| JavaScript | Application logic |
+| CSS | Responsive visual design |
+| React Router | Client-side routing |
+| Lucide React | UI icons |
+| OpenWeather API | Weather and location data |
+| Pexels API | Dynamic destination and place images |
+| Gemini API | AI travel assistant and itinerary generation |
+| Vercel | Deployment |
 
 ------------------------------------------------------------------------
 
