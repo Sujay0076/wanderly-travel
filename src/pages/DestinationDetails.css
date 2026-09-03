@@ -1,0 +1,160 @@
+.destination-details {
+  min-height: 100vh;
+  background: #f7f7f5;
+}
+
+.destination-details-hero {
+  position: relative;
+  height: 75vh;
+  min-height: 550px;
+  overflow: hidden;
+  color: white;
+}
+
+.destination-details-hero > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destination-details-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      transparent 60%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.35),
+      transparent
+    );
+}
+
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 5%;
+
+  z-index: 2;
+
+  padding: 11px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 13px;
+
+  transition: 0.25s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.destination-details-content {
+  position: absolute;
+  z-index: 2;
+
+  left: 5%;
+  bottom: 70px;
+}
+
+.destination-details-content p {
+  margin-bottom: 15px;
+
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.destination-details-content h1 {
+  font-size: clamp(4rem, 9vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  font-weight: 500;
+}
+
+.destination-details-content span {
+  display: block;
+  margin-top: 18px;
+
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.destination-overview {
+  width: min(1000px, 88%);
+  margin: 0 auto;
+
+  padding: 110px 0;
+}
+
+.destination-overview h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+
+.destination-overview-text {
+  max-width: 650px;
+
+  margin-top: 30px;
+
+  font-size: 18px;
+  line-height: 1.8;
+
+  color: #666;
+}
+
+.destination-not-found {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 30px;
+}
+
+.destination-not-found h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.destination-not-found p {
+  margin: 15px 0 25px;
+  color: #666;
+}
+
+.destination-not-found a {
+  padding: 12px 20px;
+  border-radius: 50px;
+  background: #171717;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .destination-details-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  .destination-details-content {
+    left: 6%;
+    bottom: 45px;
+  }
+
+  .destination-overview {
+    padding: 75px 0;
+  }
+}

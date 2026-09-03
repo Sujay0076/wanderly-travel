@@ -1,0 +1,33 @@
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.empty-destinations {
+  padding: 80px 20px;
+  text-align: center;
+  border: 1px dashed #ccc;
+}
+
+.empty-destinations h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.empty-destinations p {
+  margin-top: 10px;
+  color: #777;
+}
+
+@media (max-width: 900px) {
+  .destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+}
